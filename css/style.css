@@ -1185,9 +1185,17 @@ li{
     .section__conditions {
         margin-bottom: 89px;
     }
+
+    .logo{
+        width: 121px;
+    }
+
+    .header-section{
+        background-size: 100% auto;
+    }
 }
 
-@media (max-width: 767px){
+@media (max-width: 355px){
     .status__item:not(:last-child) {
         margin-right: auto;
     }
