@@ -1,0 +1,1202 @@
+/* Общие стили */
+
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family:"MuseoSansCyrl",sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+    line-height: 32px;
+    color: #000000;
+}
+
+a{
+    text-decoration: none;
+    color: #777;
+}
+
+img{
+	max-width: 100%;
+}
+
+input{
+    color: #000000;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ol[class],
+li{
+    margin: 0;
+}
+
+.list-reset{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 1232px;
+    padding: 0;
+}
+
+.main-caption{
+	text-align: left;
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #254186;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.hidden-caption{
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border:  0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+/* Стили шапки */
+
+.header-section{
+    padding-top: 22px;
+    background: url('../img/vrach_molodoy1.png') no-repeat;
+    background-position: center right;
+    /* background-size: cover; */
+    padding-bottom: 100px;
+}
+
+.header-phone-position{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+    width: 231px;
+    height: auto;
+}
+
+.second-logo{
+    display: none;
+}
+
+.header-section-fixed{
+    position: relative;
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    z-index: 6;
+}
+
+.fixed-active{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    z-index: 5;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25)
+    /* border-bottom: 1px solid #dddddd; */
+}
+
+.position-mobile{
+    display: block;
+}
+
+.position-mobile .caption__table{
+    display: none;
+}
+
+
+.fixed-active .logo{
+    display: none;
+}
+
+.fixed-active .second-logo{
+    max-width: 163px;
+    margin-right: auto;
+}
+
+.fixed-active .second-logo{
+    display: block;
+    margin-bottom: 0;
+}
+
+.fixed-active .cart-btn{
+    top: 0;
+}
+
+.fixed-active .nav{
+    margin-top: -10px;
+}
+
+.fixed-active a{
+    color: #777777;
+}
+
+.fixed-active .menu-list-item a:hover{
+    color: #777;
+    border-bottom: 1px solid #777;
+}
+
+.fixed-active .cart-btn{
+    background: url('../img/ico_list_grey.svg') 50% no-repeat;
+}
+
+.fixed-close{
+    display: none;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 3px;
+}
+
+.menu-list-item a{
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #777777;
+}
+
+.menu-list-item:not(:last-child){
+    margin-right: 102px;
+}
+
+.menu-list-item{
+    transition: color .3s ease-in-out;
+}
+
+.menu-list-item a:hover{
+    color: #e87722;
+}
+
+.header-caption-position{
+    width: 505px;
+    padding-top: 118px;
+}
+
+.header__date{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e87722;
+}
+
+.header__caption{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #254186;
+    margin-bottom: 51px;
+}
+
+.header__text-promo{
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #254186;
+    margin-bottom: 45px;
+}
+
+.header__promocode{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e87722;
+}
+
+.header__text{
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #e87722;
+    width: 250px;
+}
+
+.header__text-decoration{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    display: block;
+    margin-top: -4px;
+}
+
+
+/* Стили основного контента */
+
+.section__description{
+    padding-top: 71px;
+}
+
+.description__text{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.text__decoration{
+    font-weight: 500;
+}
+
+.section__type-gepatit{
+    padding-top: 153px;
+}
+
+.type-gepatit__position{
+    display: flex;
+}
+
+.image__card{
+    width: 144px;
+    height: auto;
+    margin-bottom: 22px;
+}
+
+.card__text{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.card__text-decoration{
+    font-weight: 700;
+}
+
+.type-gepatit__card{
+    width: 328px;
+}
+
+.type-gepatit__card:not(:last-child){
+    margin-right: 120px;
+}
+
+.type-gepatit__card-2{
+    width: 335px;
+}
+
+.transmitted__status-position,.status__item{
+    display: flex;
+    align-items: center;
+}
+
+.transmitted__status-position{
+    margin-bottom: 49px;
+    padding-left: 13px;
+}
+
+.status__item:not(:last-child){
+    margin-right: 48px;
+}
+
+.circle{
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 100%;
+}
+
+.red__circle{
+    background-color: #ff0000;
+}
+
+.blue__circle{
+    background-color: #009cf2;
+}
+
+.green__circle{
+    background-color: #3cc666;
+}
+
+.grey__circle{
+    background-color: #cccccc;
+}
+
+.white__circle{
+    background-color: unset;
+}
+
+.status__item-text{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #777777;
+    margin-left: 16px;
+}
+
+.transmitted__table-caption{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #000;
+    padding-left: 13px;
+    padding-right: 58px;
+}
+
+.transmitted__table-body{
+    display: flex;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 20px;
+    padding-left: 13px;
+    padding-right: 58px;
+}
+
+.caption__table-3{
+    margin-left: -29px;
+    margin-right: auto !important;
+}
+
+.margin__auto{
+    margin-right: auto;
+}
+
+.source__item{
+    width: 600px;
+    margin-right: auto;
+}
+
+.categori-item{
+    width: 480px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.caption__table{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.categori-item .caption__table:not(:last-child){
+    margin-right: auto;
+}
+
+.text-body__table-item:not(:last-child){
+    margin-right: auto;
+}
+
+.margin__left-auto{
+    margin-left: auto;
+}
+
+.categori-item_body{
+    width: 480px;
+}
+
+.text-body__table{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.section__transmitted{
+    padding-top: 154px;
+}
+
+.transmitted__table-body:nth-child(odd){
+    background-color: #f9f9f9;
+}
+
+.danger__block-text{
+    width: 575px;
+}
+
+.danger__text{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 69px;
+}
+
+.danger__block-caption{
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #254186;
+    margin-bottom: 44px;
+}
+
+.danger__list{
+    padding-left: 20px;
+}
+
+.list__item{
+    padding-left: 20px;
+}
+
+.danger__img{
+    width: 397px;
+    height: 627px;
+}
+
+.danger__block-img{
+    width: 400px;
+}
+
+.danger__block-position{
+    display: flex;
+    align-items: flex-start;
+}
+
+.list__item{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.list__item:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.danger__block-text{
+    margin-right: auto;
+}
+
+.warning__block{
+    width: 1086px;
+    border: 1px solid rgba(232, 119, 34, 0.5);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 39px;
+    padding-right: 50px;
+    margin: 0 auto;
+}
+
+.warning__text{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.warning__text-decoration{
+    color: #e87722;
+    font-weight: 700;
+}
+
+.danger__block-position{
+    margin-bottom: 60px;
+}
+
+.section__danger{
+    padding-top: 134px;
+}
+
+.vaccination__position{
+    display: flex;
+    align-items: flex-start;
+}
+
+.vaccination__text{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.vaccination__text:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.vaccination__text-block{
+    width: 605px;
+    margin-right: auto;
+}
+
+.section__vaccination{
+    padding-top: 158px;
+}
+
+.section__map{
+    padding-top: 150px;
+    margin-bottom: 95px;
+}
+
+#map{
+    width: 100%;
+    height: 650px;
+}
+
+.conditions__text{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.conditions__text:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.decorate__blue{
+    color: #097bcb;
+}
+
+.conditions__promocode{
+    font-weight: 700;
+}
+
+.section__conditions{
+    margin-bottom: 120px;
+}
+
+/* Стили footer */
+
+.footer__text{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #97a6c3;
+}
+
+.footer{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #f2f6fe;
+}
+
+.recomend-text{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #dadada;
+    margin: 0;
+}
+
+.footer-recomend{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.chesel-row{
+    background: rgba(248, 248, 248, 0.96);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.54vw;
+    z-index: 3;
+    bottom: 0;
+    color: #d2d2d2;
+    width: 100%;
+    line-height: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+    transform: scaleY(1.5);
+    transform-origin: bottom;
+}
+
+.header-caption-position{
+    width: 490px;
+}
+
+.header__promocode{
+    margin-left: 8px;
+}
+
+.mobile__table{
+    display: none;
+}
+
+
+
+
+/* Адаптив */
+@media (max-width: 1279px){
+    .container{
+        width: 968px;
+    }
+
+    .menu-list-item:not(:last-child) {
+        margin-right: 52px;
+    }
+
+    .header-section{
+        background-size: 600px auto;
+        background-position: 110% 70%;
+        padding-bottom: 0px;
+    }
+
+    .header__date{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #e87722;
+    }
+
+    .header__caption{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        color: #254186;
+    }
+
+    .header__text-promo{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #254186;
+    }
+
+    .description__text{
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    .section__type-gepatit {
+        padding-top: 123px;
+    }
+
+    .main-caption{
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 700;
+        color: #254186;
+        margin-bottom: 45px;
+    }
+
+    .image__card{
+        margin-bottom: 0;
+    }
+
+    .card__text{
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+    }
+
+    .type-gepatit__card:not(:last-child) {
+        margin-right: 95px;
+    }
+
+    .section__transmitted {
+        padding-top: 131px;
+    }
+
+    .section__danger {
+        padding-top: 126px;
+    }
+
+    .danger__block-text {
+        width: 535px;
+    }
+
+    .danger__block-img {
+        width: auto;
+    }
+
+    .danger__block-caption{
+        margin-bottom: 40px;
+    }
+
+    .warning__block{
+        width: 969px;
+    }
+
+    .section__vaccination {
+        padding-top: 126px;
+    }
+
+    .vaccination__position{
+        flex-direction: column;
+    }
+
+    .vaccination__text-block{
+        width: 100%;
+        margin-bottom: 49px;
+    }
+
+    .vaccination__img-block{
+        margin: 0 auto;
+    }
+
+    .section__map {
+        padding-top: 120px;
+        margin-bottom: 95px;
+    }
+
+    .section__description{
+        padding-top: 151px;
+    }
+
+
+}
+
+@media (max-width: 1023px){
+    .container{
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header-section{
+        padding-bottom: 83px;
+        background-size: cover;
+        background-color: #fff;
+    }
+
+    .logo{
+        margin-right: auto;
+        /* margin-bottom: 122px; */
+    }
+
+    .fixed-active .second-logo{
+        margin-right: auto;
+    }
+
+    .header-caption{
+        padding-top: 151px;
+    }
+
+    .header-subtitle{
+        margin-bottom: 24px;
+    }
+
+    .menu-list-item{
+        display: none;
+    }
+
+    .map{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 100vw;
+        max-height: 100vh;
+        margin-bottom: 58px;
+    }
+
+    .header-caption-position {
+        width: 90%;
+        padding-top: 67px;
+    }
+
+    .header-section{
+        background-size: 660px;
+        background-position: 50% 100%;
+        padding-bottom: 42%;
+    }
+
+    .header__caption{
+        margin-bottom: 47px;
+    }
+
+    .header__text-promo{
+        margin-bottom: 35px;
+    }
+
+    .header__text{
+        width: 100%;
+    }
+
+    .section__description {
+        padding-top: 95px;
+    }
+
+    .section__type-gepatit {
+        padding-top: 97px;
+    }
+
+    .type-gepatit__position {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section__transmitted {
+        padding-top: 91px;
+    }
+
+    .section__danger {
+        padding-top: 94px;
+    }
+
+    .danger__text{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #000000;
+        margin-bottom: 65px;
+    }
+
+    .danger__block-text {
+        width: 390px;
+    }
+
+    .list__item{
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    .warning__block {
+        width: 100%;
+    }
+
+    .warning__text{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .section__vaccination {
+        padding-top: 94px;
+    }
+
+    .vaccination__text{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .vaccination__text-block{
+        margin-bottom: 30px;
+    }
+
+    .section__map {
+        padding-top: 94px;
+        margin-bottom: 60px;
+    }
+
+    .main-caption{
+        margin-bottom: 33px;
+    }
+
+    .conditions__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .section__conditions {
+        margin-bottom: 93px;
+    }
+
+    .recomend-text{
+        font-size: 14px;
+    }
+
+    .recomended__text{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 37px;
+    }
+
+    .type-gepatit__card:not(:last-child) {
+        margin-right: auto;
+    }
+
+    .type-gepatit__card:nth-child(2n){
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767px){
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+    }
+
+    .header-caption-position{
+        padding-top: 31px;
+        width: 100%;
+    }
+
+    .header__date{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .header__caption{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .header__caption {
+        margin-bottom: 27px;
+    }
+
+    .header__text-promo{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .header-section{
+        padding-bottom: 55%;
+    }
+
+    .section__description {
+        padding-top: 84px;
+    }
+
+    .description__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .section__type-gepatit {
+        padding-top: 82px;
+    }
+
+    .main-caption{
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 27px;
+    }
+
+    .type-gepatit__position {
+        flex-direction: column;
+    }
+
+    .type-gepatit__card,.type-gepatit__card-2{
+        width: 100%;
+    }
+
+    .type-gepatit__card:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 55px;
+    }
+
+    .section__transmitted {
+        padding-top: 81px;
+    }
+
+    .transmitted__status-position{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .status__item:not(:last-child) {
+        margin-right: 63px;
+    }
+
+    .status__item:nth-child(2n){
+        margin-right: 0;
+    }
+
+    .status__item{
+        width: 40%;
+    }
+
+    .transmitted__table-caption{
+        display: none;
+    }
+
+    .transmitted__table-body{
+        display: block;
+    }
+
+    .categori-item_body {
+        width: 100%;
+    }
+
+    .position-mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    .position-mobile:not(:last-child){
+        margin-right: 30px;
+    }
+
+    .position-mobile .caption__table{
+        display: block;
+        margin-right: 10px;
+    }
+
+    .categori-item .caption__table:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .text-body__table-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .white__circle{
+        display: none;
+    }
+
+    .source__item {
+        width: 100%;
+    }
+
+    .transmitted__table-body:nth-child(odd) {
+        background-color: #fff;
+    }
+
+    .transmitted__status-position{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .text-body__table{
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .transmitted__table-body{
+        padding-left: 0;
+    }
+
+    .section__danger {
+        padding-top: 65px;
+    }
+
+    .mobile__table{
+        display: block;
+    }
+
+    .desctop__table{
+        display: none;
+    }
+
+    .danger__block-text {
+        width: 100%;
+    }
+
+    .danger__text{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 46px;
+    }
+
+    .danger__block-caption{
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 31px;
+    }
+
+    .danger__block-position{
+        flex-direction: column;
+    }
+
+    .danger__block-img{
+        max-width: 528px;
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .danger__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .danger__block-position {
+        margin-bottom: 44px;
+    }
+
+    .warning__text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .warning__block{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .section__vaccination {
+        padding-top: 77px;
+    }
+
+    .vaccination__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .vaccination__img,.vaccination__img-block{
+        max-width: 528px;
+        height: auto;
+        width: 100%;
+    }
+
+    .vaccination__img-block{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .section__map {
+        padding-top: 84px;
+        margin-bottom: 40px;
+    }
+
+    .conditions__text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .section__conditions {
+        margin-bottom: 89px;
+    }
+}
+
+@media (max-width: 767px){
+    .status__item:not(:last-child) {
+        margin-right: auto;
+    }
+
+    .status__item {
+        width: 137px;
+    }
+
+    .status__item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
