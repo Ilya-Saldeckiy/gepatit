@@ -937,6 +937,10 @@ li{
     .type-gepatit__card:nth-child(2n){
         margin-right: 0;
     }
+
+    .fixed-active {
+        position: relative;
+    }
 }
 
 @media (max-width: 767px){
