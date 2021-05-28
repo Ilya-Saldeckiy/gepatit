@@ -92,9 +92,15 @@ li{
 .header-section{
     padding-top: 22px;
     background: url('../img/vrach_molodoy1.png') no-repeat;
-    background-position: 100% 90%;
+    background-position: 106% 91%;
     /* background-size: cover; */
     padding-bottom: 0px;
+}
+
+.conditions__caption{
+    font-size: 26px;
+    margin-bottom: 33px;
+    line-height: 26px;
 }
 
 .header-phone-position{
@@ -214,7 +220,7 @@ li{
 
 .header-caption-position{
     width: 505px;
-    padding-top: 118px;
+    padding-top: 107px;
 }
 
 .header__date{
@@ -632,10 +638,6 @@ li{
     transform-origin: bottom;
 }
 
-.header-caption-position{
-    width: 490px;
-}
-
 .header__promocode{
     margin-left: 8px;
 }
@@ -766,6 +768,12 @@ li{
 
     .section__description{
         padding-top: 151px;
+    }
+
+    .conditions__caption{
+        font-size: 26px;
+        margin-bottom: 33px;
+        line-height: 26px;
     }
 
 
@@ -940,6 +948,18 @@ li{
 
     .fixed-active {
         position: relative;
+    }
+
+    .danger__img {
+        width: 100%;
+        height: auto;
+        max-width: 528px;
+    }
+
+    .conditions__caption{
+        font-size: 26px;
+        margin-bottom: 33px;
+        line-height: 26px;
     }
 }
 
@@ -1215,6 +1235,16 @@ li{
         line-height: 20px;
         padding-left: 0;
     }
+
+    .transmitted__table-body:nth-child(even){
+        background-color: #ffffff;
+    }
+
+    .conditions__caption{
+        font-size: 22px;
+        margin-bottom: 30px;
+        line-height: 26px;
+    }
 }
 
 @media (max-width: 355px){
@@ -1228,5 +1258,9 @@ li{
 
     .status__item:nth-child(2n) {
         margin-right: 0;
+    }
+
+    .header-caption-position {
+        width: 100%;
     }
 }
