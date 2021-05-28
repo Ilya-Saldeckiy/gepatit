@@ -92,9 +92,9 @@ li{
 .header-section{
     padding-top: 22px;
     background: url('../img/vrach_molodoy1.png') no-repeat;
-    background-position: center right;
+    background-position: 100% 90%;
     /* background-size: cover; */
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 
 .header-phone-position{
@@ -176,7 +176,6 @@ li{
 
 .fixed-active .menu-list-item a:hover{
     color: #777;
-    border-bottom: 1px solid #777;
 }
 
 .fixed-active .cart-btn{
@@ -268,7 +267,7 @@ li{
 /* Стили основного контента */
 
 .section__description{
-    padding-top: 71px;
+    padding-top: 171px;
 }
 
 .description__text{
@@ -440,7 +439,7 @@ li{
     padding-top: 154px;
 }
 
-.transmitted__table-body:nth-child(odd){
+.transmitted__table-body:nth-child(even){
     background-color: #f9f9f9;
 }
 
@@ -932,6 +931,7 @@ li{
 
     .type-gepatit__card:not(:last-child) {
         margin-right: auto;
+        margin-bottom: 41px;
     }
 
     .type-gepatit__card:nth-child(2n){
@@ -948,6 +948,10 @@ li{
         padding-left: 16px;
         padding-right: 16px;
         width: 100%;
+    }
+
+    .type-gepatit__card:not(:last-child) {
+        margin-bottom: 0px;
     }
 
     .header-caption-position{
@@ -1196,6 +1200,20 @@ li{
 
     .header-section{
         background-size: 100% auto;
+    }
+
+    .transmitted__table-body{
+        padding-right: 0;
+    }
+
+    .header-caption-position{
+        width: 310px;
+    }
+
+    .list__item{
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 0;
     }
 }
 
