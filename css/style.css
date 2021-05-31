@@ -647,6 +647,12 @@ li{
 }
 
 
+@media (max-width: 1580px){
+    .header-section{
+        background-position: 110% 91%;
+    }
+}
+
 
 
 /* Адаптив */
